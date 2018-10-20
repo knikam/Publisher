@@ -1,0 +1,229 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="1dp"
+    android:layout_marginRight="5dp"
+    android:padding="5dp"
+    android:layout_marginLeft="5dp"
+    android:background="@drawable/card_view_white"
+    android:elevation="1dp"
+    style="@style/AppTheme"
+    android:layout_height="wrap_content"
+    android:id="@+id/publication_show_card">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty Name :"
+                    android:textStyle="bold"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"
+                    />
+                <TextView
+                    android:id="@+id/id_publication_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo Faculty Name"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Authors :"
+                    android:textStyle="bold"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/id_publication_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Demo Authors"
+                    android:maxLines="1"
+                    android:layout_marginRight="5dp"
+                    android:ellipsize="end"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Publication Type :"
+                    android:textStyle="bold"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/id_publication_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo Publication Type"
+                    android:textColor="@color/themecolor"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-condensed"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paper Title :"
+                    android:textStyle="bold"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/id_publication_paperTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo Title "
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conference/Journel:"
+                    android:textStyle="bold"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/id_publication_conferenceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo Conference"
+                    android:textColor="@color/themecolor"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-condensed"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Publication:"
+                    android:textStyle="bold"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/id_publication_publicationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo publication Date"
+                    android:textColor="@color/themecolor"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-condensed"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="3dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="DOI/ISSN/ISBN :"
+                    android:textStyle="bold"
+                    android:textColor="@color/themecolor" />
+
+                <TextView
+                    android:id="@+id/id_publication_doi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo DOI"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year Of Publication :"
+                    android:textStyle="bold"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/id_publication_publicationYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo Acadmic Year"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"/>
+            </TableRow>
+        </TableLayout>
+</RelativeLayout>

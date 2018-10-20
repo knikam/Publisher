@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_teacher_list_card"
+    android:layout_width="match_parent"
+    android:layout_height="124dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:elevation="8dp"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/card_view_white"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_card_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:src="@color/placeholder_bg"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp">
+
+            <TextView
+                android:id="@+id/id_card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_alignTop="@+id/imageView20"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Name here"
+                android:textStyle="bold"
+                android:textColor="@color/themecolor_dark" />
+
+            <TextView
+                android:id="@+id/id_card_qualifiaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/id_card_name"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Qualification here"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/themecolor_dark"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/id_card_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Designation here"
+                android:textColor="@color/themecolor_dark"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/id_card_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/id_card_designation"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Email Id here"
+                android:textColor="@color/themecolor_dark"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/id_card_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/id_card_email"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Contact No here"
+                android:textColor="@color/themecolor_dark"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/ic_user_name"
+                tools:ignore="RtlCompat,VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_below="@+id/id_card_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                app:srcCompat="@drawable/ic_qualificatin"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="16dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/ic_designation"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/id_card_designation"
+                app:srcCompat="@drawable/ic_email_fill"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:layout_below="@+id/id_card_email"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                app:srcCompat="@drawable/ic_smartphone_call"
+                tools:ignore="VectorDrawableCompat" />
+
+        </RelativeLayout>
+    </LinearLayout>

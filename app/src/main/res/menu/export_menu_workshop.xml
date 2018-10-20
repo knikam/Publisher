@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_search_by_date"
+        android:title="Search By Date"></item>
+    <item android:id="@+id/menu_search_by_Academic"
+        android:title="Search By Academic"></item>
+    <item android:id="@+id/menu_all"
+        android:title="All Data"></item>
+
+</menu>

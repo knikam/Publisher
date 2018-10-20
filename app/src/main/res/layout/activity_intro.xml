@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.IntroActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:background="@drawable/card_view"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/id_right_arrow"
+            android:layout_width="35dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_right_arrow"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/id_left_arrow"
+            android:layout_width="35dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/ic_left_arrow"
+            tools:ignore="VectorDrawableCompat" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slidepager"
+            android:layout_width="match_parent"
+            android:layout_height="281dp">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="149dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_layout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentLeft="true"
+        >
+
+        <Button
+            android:id="@+id/id_continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="start"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/button_on_start"
+            android:paddingLeft="80dp"
+            android:paddingStart="50dp"
+            android:text="@string/continue_as_guest"
+            android:textAlignment="textStart"
+            android:textColor="@color/themecolor"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="42dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/id_continue_btn"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/enter"
+            app:srcCompat="@drawable/enter"
+            tools:ignore="RtlCompat"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

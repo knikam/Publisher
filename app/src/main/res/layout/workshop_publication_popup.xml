@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/card_view_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/themecolor">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:elevation="@dimen/standard_55"
+            android:fontFamily="@font/lobster"
+            android:text=" Choose Option As You Want "
+            android:textColor="@color/white"
+            android:textSize="26dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp">
+
+
+        <Button
+            android:id="@+id/id_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Add Workshop"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/button_theme"/>
+
+        <Button
+            android:id="@+id/id_show_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_theme"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Show Workshop"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/add_workshop"
+    android:background="@drawable/gradient_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Add_WorkshopActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:elevation="5dp"
+            android:background="@drawable/card_view_white">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:textColorHint="@color/themecolor"
+                >
+
+                <EditText
+                    android:id="@+id/id_add_workshop_faculty_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/themecolor_dark"
+                    android:backgroundTint="@color/themecolor"
+                    android:inputType="textPersonName"
+                    android:hint="Faculty Name"
+                    android:fontFamily="sans-serif-condensed"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="80dp"
+                android:textColorHint="@color/themecolor"
+                >
+
+                <EditText
+                    android:id="@+id/id_add_workshop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/themecolor_dark"
+                    android:backgroundTint="@color/themecolor"
+                    android:inputType="textPersonName"
+                    android:hint="Workshop/FDP/STTP Name"
+                    android:fontFamily="sans-serif-condensed"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="135dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:id="@+id/id_add_workshop_organize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textColor="@color/themecolor_dark"
+                    android:inputType="textPersonName"
+                    android:hint="Organized By"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:backgroundTint="@color/themecolor"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="190dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:id="@+id/id_add_workshop_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/themecolor"
+                    android:ems="10"
+                    android:textColor="@color/themecolor_dark"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Duration (Day/Hr)"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="245dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:id="@+id/id_add_workshop_startDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/themecolor_dark"
+                    android:backgroundTint="@color/themecolor"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Start Date"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="300dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:id="@+id/id_add_workshop_endDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textColor="@color/themecolor_dark"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:hint="End Date"
+                    android:fontFamily="sans-serif-condensed"
+                    android:backgroundTint="@color/themecolor"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="350dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/id_add_workshop_acadmicYear_txt"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:id="@+id/id_add_workshop_acadmicYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Academic Year"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/themecolor_dark"
+                    android:fontFamily="sans-serif-condensed"
+                    android:backgroundTint="@color/themecolor"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/id_add_workshop_submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_add_workshop_acadmicYear_txt"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_theme"
+                android:text="Submit Report"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+    </ScrollView>

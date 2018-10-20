@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themecolor">#2DC9FD</color>
+    <color name="themecolor_transarent">#b82dc9fd</color>
+    <color name="themecolor_dark">#01a9e1</color>
+    <color name="themecolor_more_dark">#0296c7</color>
+    <color name="white">#fff</color>
+    <color name="transaparent_white">#d6ffffff</color>
+    <color name="black">#000</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#0000ff</color>
+    <color name="green">#009600</color>
+    <color name="grey">#dedede</color>
+    <color name="transparent">#00dedede</color>
+
+    //shimmer color
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+</resources>

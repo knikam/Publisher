@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:id="@+id/id_profile_layout"
+    android:background="@drawable/gradient_color"
+    android:layout_height="match_parent"
+    tools:context=".Activity.User_profileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:elevation="6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/profile_image"
+        android:src="@color/placeholder_bg"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_white"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="70dp"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/id_profile_edit_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_edit_pencile"
+            tools:ignore="VectorDrawableCompat" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/themecolor">
+
+            <EditText
+                android:id="@+id/id_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/themecolor"
+                android:ems="10"
+                android:textColor="@color/themecolor_dark"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/themecolor">
+
+            <EditText
+                android:id="@+id/id_profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/themecolor"
+                android:ems="10"
+                android:textColor="@color/themecolor_dark"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Enter Email Id"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/themecolor"
+            android:layout_marginRight="10dp"
+            >
+
+            <EditText
+                android:id="@+id/id_profile_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/themecolor"
+                android:ems="10"
+                android:textColor="@color/themecolor_dark"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Enter Qualification"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColorHint="@color/themecolor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           >
+
+            <EditText
+                android:id="@+id/id_profile_Designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/themecolor"
+                android:ems="10"
+                android:textColor="@color/themecolor_dark"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Enter Designation"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColorHint="@color/themecolor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           >
+
+            <EditText
+                android:id="@+id/id_profile_contact_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:maxLength="10"
+                android:backgroundTint="@color/themecolor"
+                android:ems="10"
+                android:textColor="@color/themecolor_dark"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Enter Contact No."
+                android:inputType="phone"
+                android:paddingLeft="5dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/id_profile_update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="2dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_below="@id/password_textlayout"
+            android:background="@drawable/button_theme"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+</ScrollView>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/show_workshop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ShowWorkshopActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_workshop_recycle"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/workshop_shimmer"
+        app:duration="500">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_without_image_layout"/>
+
+            <include layout="@layout/shimmer_without_image_layout"/>
+
+            <include layout="@layout/shimmer_without_image_layout"/>
+
+            <include layout="@layout/shimmer_without_image_layout"/>
+
+            <include layout="@layout/shimmer_without_image_layout"/>
+
+            <include layout="@layout/shimmer_without_image_layout"/>
+
+            <include layout="@layout/shimmer_without_image_layout"/>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dates"
+            android:id="@+id/id_workshop_date_lable"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:elevation="16dp"
+            android:visibility="gone"
+            android:background="@drawable/float_button_lable"
+            android:padding="3dp"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/id_search_by_date"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:visibility="gone"
+            android:elevation="16dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/themecolor_dark"
+            android:src="@drawable/ic_twodate"
+            app:fabSize="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acadmic Year"
+            android:id="@+id/id_workshop_academic_label"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="80dp"
+            android:elevation="16dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:background="@drawable/float_button_lable"
+            android:padding="3dp"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/id_search_by_acadmic"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:visibility="gone"
+            android:elevation="16dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/themecolor_more_dark"
+            android:src="@drawable/ic_calendar"
+            app:fabSize="normal" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/id_workshop_floatAction"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/themecolor"
+            android:src="@drawable/search_bar"
+            app:fabSize="normal" />
+
+        <LinearLayout
+            android:id="@+id/id_workshop_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/themecolor_more_dark"
+            android:padding="8dp"
+            android:elevation="20dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_editbox"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="14dp"
+                android:textColor="@color/themecolor_dark"
+                android:layout_marginEnd="40dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Search Academic Year"
+                android:elevation="8dp"
+                android:maxLines="1"
+                android:id="@+id/id_workshop_acdemic_searchtxt"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/id_workshop_searchbtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                app:srcCompat="@drawable/search_bar"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_workshop_date_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/themecolor_more_dark"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:elevation="20dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_editbox"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="14dp"
+                android:textColor="@color/themecolor_dark"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Start Date "
+                android:elevation="8dp"
+                android:id="@+id/id_workshop_fromdate_searchtxt"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_editbox"
+                android:textSize="14dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/themecolor_dark"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="End Date   "
+                android:elevation="8dp"
+                android:id="@+id/id_workshop_todate_searchtxt"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/id_workshop_date_searchbtn"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:paddingTop="2dp"
+                app:srcCompat="@drawable/search_bar" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

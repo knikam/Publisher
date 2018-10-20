@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/id_menu_home_group">
+        <item android:id="@+id/id_menu_login"
+            android:title="Log In"
+            />
+        <item android:id="@+id/id_menu_profile"
+            android:title="Profile"></item>
+
+        <item android:id="@+id/id_menu_export_data"
+            android:title="Export Data"
+            />
+        <item android:id="@+id/id_menu_changepassword"
+            android:title="Change Password"></item>
+    </group>
+    <group android:id="@+id/id_menu_about_group">
+        <item android:id="@+id/id_menu_Admin"
+            android:title="Admin Login" />
+
+        <item android:id="@+id/id_menu_logout"
+            android:title="Logout"
+          />
+        <item android:id="@+id/id_menu_about"
+            android:title="About Us"
+           />
+    </group>
+</menu>

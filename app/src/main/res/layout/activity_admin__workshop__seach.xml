@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themecolor_dark"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/admin_year_text"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/admin_edit_text"
+            android:hint="Academic Year"
+            android:padding="12dp"
+            android:textColor="@color/themecolor_dark"
+            android:textColorHint="@color/themecolor"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/admin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_theme"
+            android:text="Search"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_piechart"
+        android:background="@drawable/gradient_color">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+</LinearLayout>

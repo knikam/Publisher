@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slider_layout"
+    android:layout_width="match_parent"
+    android:background="@color/themecolor"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="100dp"
+    tools:context=".Activity.IntroActivity">
+
+    <ImageView
+        android:id="@+id/id_slide_image"
+        android:layout_width="139dp"
+        android:layout_height="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/ic_welcomeicon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/id_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/lobster"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/id_desc_txt"
+        android:layout_width="289dp"
+        android:layout_height="107dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="201dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textAlignment="center"
+        android:text="Information of Workshop And Publication of Computer Departmet" />
+</RelativeLayout>

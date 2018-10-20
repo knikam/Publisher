@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_publication">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_view_white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            tools:context=".Activity.Add_PublicationActivity">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:id="@+id/id_add_publication_facultyName"
+                    android:backgroundTint="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Name Of Faculty"
+                    android:textColor="@color/themecolor_dark"
+                    android:paddingLeft="10dp"
+                    android:ems="10"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/themecolor"
+                    android:id="@+id/id_add_publication_authorName"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/themecolor_dark"
+                    android:hint="Name Of Authors"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="130dp"
+                android:paddingTop="5dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_add_publication_publicationType"
+                    android:backgroundTint="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="12dp"
+                    android:textColor="@color/themecolor_dark"
+                    android:inputType="textPersonName"
+                    android:hint="Publication Type (National/International and Journal/Conference)"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="185dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_add_publication_paperTitle"
+                    android:backgroundTint="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Title Of Paper"
+                    android:textColor="@color/themecolor_dark"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="240dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_add_publication_conferenceName"
+                    android:backgroundTint="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Name Of Conference/Journal"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/themecolor_dark"
+                    android:inputType="textPersonName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="295dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_add_publication_publicationDate"
+                    android:backgroundTint="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Date Of Publication"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/themecolor_dark"
+                    android:inputType="textPersonName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="350dp"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_add_publication_DOI"
+                    android:backgroundTint="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="DOI/ISSN/ISBN"
+                    android:textColor="@color/themecolor_dark"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="405dp"
+                android:id="@+id/id_add_publication_publicationYear_txt"
+                android:textColorHint="@color/themecolor">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_add_publication_publicationYear"
+                    android:backgroundTint="@color/themecolor"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Year Of Publication"
+                    android:textColor="@color/themecolor_dark"
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Detail"
+                android:id="@+id/id_add_publicationBtn"
+                android:layout_below="@id/id_add_publication_publicationYear_txt"
+                android:layout_marginTop="45dp"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:shadowColor="@color/transparent"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_theme"
+                />
+        </RelativeLayout>
+    </ScrollView>
